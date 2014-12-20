@@ -12,10 +12,7 @@ import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.imageio.ImageIO;
 import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.StreamingOutput;
+import javax.ws.rs.core.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.URI;
@@ -31,7 +28,7 @@ public class Images {
     private BackendServiceBean service;
 
     @Context
-    private javax.ws.rs.core.UriInfo uriInfo;
+    private UriInfo uriInfo;
 
     @RolesAllowed("ADMIN")
     @POST
