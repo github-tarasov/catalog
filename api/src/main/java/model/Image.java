@@ -58,31 +58,22 @@ public class Image extends Model {
         this.sort = sort;
     }
 
-
-    // JsonIgnoreGetter
-    //@JsonIgnore
     public byte[] getSmall() { return small; }
 
-    //@JsonIgnore(false)
     public void setSmall(byte[] small) {
         this.small = small;
     }
 
-    // JsonIgnoreGetter
-    //@JsonIgnore
     public byte[] getBig() { return big; }
 
-    //@JsonIgnore(false)
     public void setBig(byte[] big) {
         this.big = big;
     }
-
 
     public URI getSmallHref() {
         return smallHref;
     }
 
-    // JsonIgnoreSetter
     public void setSmallHref(URI smallHref) {
         this.smallHref = smallHref;
     }
@@ -91,7 +82,6 @@ public class Image extends Model {
         return bigHref;
     }
 
-    // JsonIgnoreSetter
     public void setBigHref(URI bigHref) {
         this.bigHref = bigHref;
     }
